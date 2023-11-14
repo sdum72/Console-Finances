@@ -105,13 +105,16 @@ var differences = [];
 
 for (var i = 1; i < finances.length; i++) {
   var difference = (finances[i][1] - finances[i - 1][1]);
-  console.log(finances[0]; difference)
+  var monthlyChange = (finances[i][0]+ "," + difference)
+ //  console.log( difference)
+ console.log(monthlyChange)
     
      differences.push(difference);
   
   totalDifference += difference;
   
 }
+
 
 // console.log(totalDifference)
 
