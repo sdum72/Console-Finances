@@ -87,13 +87,12 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
-var numberofMonth = finances.length;
-console.log("Total months: " + numberofMonth);
+var numberofMonths = finances.length;
+console.log("Total months: " + numberofMonths);
 
 var netTotal = 0;
 for (var i = 0; i < finances.length; i++ ) {
      netTotal += finances[i][1];
-      
  }
  console.log("Total: " + netTotal+ ".");  // total should be outside the loop!!!!!!!
 
@@ -107,21 +106,15 @@ for (var i = 1; i < finances.length; i++) {
   var difference = (finances[i][1] - finances[i - 1][1]);
   var monthlyChange = (finances[i][0]+ "," + difference)
  //  console.log( difference)
- console.log(monthlyChange)
+ // console.log(monthlyChange)
     
      differences.push(difference);
   
   totalDifference += difference;
-  
+
 }
 
 
-// console.log(totalDifference)
-
-// differences.min()
-
-
-// Log the total difference to the console
 // console.log(totalDifference)
 
 // calculate average change to 2 decimal places.
